@@ -101,7 +101,7 @@ const config: Config = {
           items: [
             {
               label: 'Workshop Overview',
-              to: '/docs/workshop-overview',
+              to: '/docs/intro',
             },
             {
               label: 'Participant Guide',

@@ -27,7 +27,7 @@ Dalam 2 hari workshop ini, Anda akan membangun:
 
 ## 🗓️ Jadwal Workshop
 
-Lihat detail jadwal workshop di [Ringkasan Workshop](./workshop-overview.md).
+Lihat detail jadwal workshop di [Ringkasan Workshop](./intro.md).
 
 ## 🎓 Tujuan Pembelajaran
 
