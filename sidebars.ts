@@ -12,7 +12,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'workshop-intro/introduction',
-        'workshop-intro/intro',
+        'workshop-intro/introduction',
       ],
     },
     {
