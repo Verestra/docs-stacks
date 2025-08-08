@@ -12,7 +12,7 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'workshop-intro/introduction',
-        'workshop-intro/introduction',
+        'workshop-intro/workshop-overview',
       ],
     },
     {
@@ -51,7 +51,8 @@ const sidebars: SidebarsConfig = {
       collapsed: false,
       items: [
         'day1-tic-tac-toe/introduction',
-        'day1-tic-tac-toe/tic-tac-toe-project',
+        'day1-tic-tac-toe/contracts-tic-tac-toe',
+        'day1-tic-tac-toe/ui-tic-tac-toe',
       ],
     },
     {

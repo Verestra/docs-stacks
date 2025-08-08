@@ -31,7 +31,6 @@ Setelah menguasai dasar-dasar development di Stacks, bagian ini membahas topik l
 ## 📋 Isi Bagian
 
 1. **[Panduan Deployment](./deployment-guide.md)** - Deployment ke production
-2. **[NFT Marketplace](./nft-marketplace/)** - Aplikasi marketplace lengkap
 
 ## 🎯 Kapan Menggunakan
 

@@ -32,33 +32,33 @@ Workshop ini dirancang untuk memberikan pengalaman hands-on dalam membangun smar
 
 Dokumentasi ini disusun untuk mengikuti alur workshop:
 
-### 🎯 [Pengenalan Workshop](./01-workshop-intro/)
+### 🎯 [Pengenalan Workshop](./workshop-intro/introduction)
 - Ringkasan workshop dan jadwal
 - Tujuan pembelajaran dan hasil yang diharapkan
 
-### 🚀 [Memulai](./02-getting-started/) 
+### 🚀 [Memulai](./getting-started/introduction) 
 - Dasar-dasar Blockchain dan Stacks
 - Setup environment development
 - Setup wallet
 - Dasar-dasar bahasa Clarity
 
-### 🎮 [Hari 1: Project Tic Tac Toe](./03-day1-tic-tac-toe/)
+### 🎮 [Hari 1: Project Tic Tac Toe](./day1-tic-tac-toe/introduction)
 - Implementasi Tic Tac Toe step-by-step
 - Belajar Clarity melalui hands-on project
 - Testing dan deployment
 
-### 💼 [Hari 2: Project Solo](./04-day2-solo-projects/)
+### 💼 [Hari 2: Project Solo](./day2-solo-projects/introduction)
 - **Opsi 1**: Simple Token (SIP-010)
 - **Opsi 2**: Koleksi NFT (SIP-009)  
 - **Opsi 3**: Sistem Voting
 - Panduan project lengkap untuk setiap opsi
 
-### 🔧 [Topik Lanjutan](./05-advanced-topics/)
+### 🔧 [Topik Lanjutan](./advanced-topics/introduction)
 - Strategi deployment production
 - Pattern smart contract lanjutan
 - Pengembangan NFT marketplace
 
-### 📚 [Referensi](./06-reference/)
+### 📚 [Referensi](./reference/introduction)
 - Referensi command Clarinet
 - Panduan troubleshooting
 - Kompatibilitas versi
@@ -83,13 +83,13 @@ Workshop ini menggunakan pendekatan **learning by doing**:
 
 Siap untuk memulai workshop? Ikuti langkah berikut:
 
-1. **[Pengenalan Workshop](./01-workshop-intro/)** - Pahami apa yang akan Anda bangun
-2. **[Memulai](./02-getting-started/)** - Setup environment Anda  
-3. **[Project Hari 1](./03-day1-tic-tac-toe/)** - Bangun smart contract pertama
-4. **[Project Hari 2](./04-day2-solo-projects/)** - Pilih spesialisasi Anda
+1. **[Pengenalan Workshop](./workshop-intro/introduction)** - Pahami apa yang akan Anda bangun
+2. **[Memulai](./getting-started/introduction)** - Setup environment Anda  
+3. **[Project Hari 1](./day1-tic-tac-toe/introduction)** - Bangun smart contract pertama
+4. **[Project Hari 2](./day2-solo-projects/introduction)** - Pilih spesialisasi Anda
 
 ---
 
 **🎯 Tujuan Workshop**: Di akhir workshop ini, Anda akan memiliki 2 smart contract lengkap dan memahami cara mengembangkan di Bitcoin Layer 2 yang paling aman.
 
-👉 **[Mulai dengan Pengenalan Workshop →](./01-workshop-intro/)**
+👉 **[Mulai dengan Pengenalan Workshop →](./workshop-intro/introduction)**

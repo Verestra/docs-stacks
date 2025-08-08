@@ -1131,4 +1131,4 @@ Dengan understanding fungible tokens, Anda ready untuk explore NFTs dan more com
 
 **Selanjutnya**: Mari explore Non-Fungible Tokens (NFTs) dengan SIP-009 standard.
 
-👉 **[Lanjut ke Non-Fungible Tokens →](./non-fungible-tokens.md)**
+👉 **[Kembali ke Panduan Project Solo →](./solo-project-guide.md)**

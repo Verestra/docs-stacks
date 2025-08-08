@@ -27,7 +27,7 @@ Dalam 2 hari workshop ini, Anda akan membangun:
 
 ## 🗓️ Jadwal Workshop
 
-Lihat detail jadwal workshop di [Ringkasan Workshop](./intro.md).
+Lihat detail jadwal workshop di [Ringkasan Workshop](./workshop-overview.md).
 
 ## 🎓 Tujuan Pembelajaran
 
@@ -52,4 +52,4 @@ Setelah workshop ini, Anda akan mampu:
 
 Siap untuk memulai? Mari setup environment development Anda:
 
-👉 **[Lanjut ke Memulai →](../02-getting-started/)**
+👉 **[Lanjut ke Memulai →](../getting-started/introduction)**

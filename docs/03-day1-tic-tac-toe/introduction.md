@@ -42,4 +42,4 @@ Game Tic Tac Toe lengkap dengan:
 
 ## 🚀 Mari Mulai
 
-👉 **[Mulai Project Tic Tac Toe →](./tic-tac-toe-project.md)**
+👉 **[Mulai Project Tic Tac Toe →](./1-contracts-tic-tac-toe.md)**

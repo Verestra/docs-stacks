@@ -703,4 +703,4 @@ Dengan memahami fundamentals Clarity, Anda siap untuk building sophisticated sma
 
 **Selanjutnya**: Setelah memahami dasar-dasar Clarity, mari langsung praktek dengan membangun project Tic Tac Toe!
 
-👉 **[Lanjut ke Project Tic Tac Toe →](../03-day1-tic-tac-toe/)**
+👉 **[Lanjut ke Project Tic Tac Toe →](../day1-tic-tac-toe/introduction)**
