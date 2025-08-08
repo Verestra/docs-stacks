@@ -1,3 +1,10 @@
+---
+sidebar_position: 2
+title: 2. Referensi Command Clarinet
+description: Referensi lengkap semua command Clarinet untuk development workflow - project management, testing, deployment, dan debugging
+keywords: [clarinet commands, cli reference, development commands, testing commands, deployment commands]
+---
+
 # Clarinet Commands Reference
 
 Quick reference untuk semua Clarinet commands yang commonly used dalam development.
@@ -148,8 +155,6 @@ clarinet integrate --help
 # Generate untuk testnet
 clarinet deployment generate --testnet
 
-# Generate untuk mainnet  
-clarinet deployment generate --mainnet
 
 # Custom output file
 clarinet deployment generate --testnet --plan-path my-plan.yaml
@@ -160,8 +165,6 @@ clarinet deployment generate --testnet --plan-path my-plan.yaml
 # Deploy ke testnet
 clarinet deployment apply --testnet
 
-# Deploy ke mainnet
-clarinet deployment apply --mainnet
 
 # Deploy dengan specific plan
 clarinet deployment apply --testnet --plan-path my-plan.yaml

@@ -1,3 +1,10 @@
+---
+sidebar_position: 6
+title: 6. Apa itu Stacks
+description: Pengenalan lengkap Stacks sebagai Layer 2 Bitcoin - Proof of Transfer, smart contracts dengan Clarity, dan ecosystem DeFi yang berkembang
+keywords: [stacks, bitcoin layer 2, proof of transfer, clarity language, smart contracts, defi, stx token]
+---
+
 # Apa itu Stacks?
 
 Stacks adalah Layer 2 network terdepan yang dibangun khusus untuk Bitcoin. Stacks menambahkan kemampuan smart contract ke ekosistem Bitcoin sambil mewarisi manfaat keamanan dari network Bitcoin. Nama "Stacks" adalah akronim yang merepresentasikan fitur-fitur utamanya:
@@ -523,6 +530,6 @@ Stacks positioned sebagai leading platform untuk Bitcoin Economy, memungkinkan d
 
 ---
 
-**Selanjutnya**: Mari explore arsitektur blockchain Stacks secara detail dan bagaimana komponen-komponennya bekerja sama.
+**Selanjutnya**: Setelah memahami teori dasar blockchain dan Stacks, mari mulai setup development environment kita dimulai dengan wallet.
 
-👉 **[Lanjut ke Arsitektur Stacks →](./stacks-architecture.md)**
+👉 **[Lanjut ke Setup Wallet →](./wallet-setup.md)**

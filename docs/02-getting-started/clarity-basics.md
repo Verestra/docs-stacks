@@ -1,3 +1,10 @@
+---
+sidebar_position: 9
+title: 9. Dasar-dasar Clarity
+description: Pengenalan bahasa pemrograman Clarity - syntax, tipe data, functions, error handling, dan konsep fundamental untuk smart contract development
+keywords: [clarity language, smart contract programming, functional programming, lisp syntax, stacks development]
+---
+
 # Dasar-Dasar Clarity
 
 Clarity adalah bahasa pemrograman functional yang dirancang khusus untuk mengembangkan smart contracts di blockchain Stacks. Tidak seperti banyak bahasa pemrograman tradisional yang mengikuti paradigma imperative, Clarity mengadopsi pendekatan functional di mana komputasi diperlakukan sebagai evaluasi fungsi matematika sambil menghindari perubahan state atau mutable data.
@@ -694,6 +701,6 @@ Dengan memahami fundamentals Clarity, Anda siap untuk building sophisticated sma
 
 ---
 
-**Selanjutnya**: Mari explore token development dengan creating fungible tokens menggunakan SIP-010 standard.
+**Selanjutnya**: Setelah memahami dasar-dasar Clarity, mari langsung praktek dengan membangun project Tic Tac Toe!
 
-👉 **[Lanjut ke Token Development →](../token-development/)**
+👉 **[Lanjut ke Project Tic Tac Toe →](../03-day1-tic-tac-toe/)**

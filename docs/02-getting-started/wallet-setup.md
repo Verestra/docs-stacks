@@ -1,3 +1,10 @@
+---
+sidebar_position: 7
+title: 7. Setup Wallet
+description: Panduan lengkap instalasi dan konfigurasi Leather Wallet untuk berinteraksi dengan Stacks blockchain, termasuk setup testnet dan security best practices
+keywords: [leather wallet, stacks wallet, testnet, wallet setup, security, private key, seed phrase]
+---
+
 # Setup Stacks Wallet
 
 Untuk berinteraksi dengan aplikasi Stacks dan mengelola aset digital Anda, Anda memerlukan wallet Stacks. Leather Wallet adalah wallet browser extension yang paling populer dan user-friendly untuk ekosistem Stacks.
@@ -133,7 +140,7 @@ Leather Wallet Interface:
 │ └── Stacking: Lock STX untuk BTC rewards        │
 ├─────────────────────────────────────────────────┤
 │ Settings                                        │
-│ ├── Network: Mainnet, Testnet, Devnet          │
+│ ├── Network: Testnet, Devnet (Workshop Focus)  │
 │ ├── Security: Password, backup options          │
 │ ├── Accounts: Multiple account management       │
 │ └── Advanced: Developer options                 │
@@ -171,12 +178,8 @@ How to Create:
 ### Network Selection
 
 ```
-Available Networks:
-├── Mainnet: Real STX, real value, production apps
-│   ├── Use for: Real transactions, actual investing
-│   ├── Costs: Real STX untuk gas fees
-│   └── Security: Highest security, irreversible
-├── Testnet: Fake STX, testing environment  
+Workshop Networks:
+├── Testnet: Fake STX, testing environment (WORKSHOP FOCUS)  
 │   ├── Use for: Testing apps, learning, development
 │   ├── Costs: Free testnet STX dari faucets
 │   └── Security: Test environment, dapat direset
@@ -216,32 +219,9 @@ Available Networks:
    5. Check balance dalam Leather
    ```
 
-### Mainnet STX (Real Value)
+---
 
-```
-Ways to Get STX:
-├── Cryptocurrency Exchanges:
-│   ├── Binance: Large volume, global
-│   ├── Coinbase: US-based, regulated
-│   ├── Kraken: Advanced trading features
-│   ├── KuCoin: Wide selection
-│   └── OKEx: Asian markets
-├── Decentralized Exchanges:
-│   ├── Alex (Stacks native): Best rates untuk STX
-│   ├── Uniswap: ETH-based STX trading
-│   └── SushiSwap: Alternative DEX option
-├── Direct Purchase:
-│   ├── Credit card: Some exchanges allow
-│   ├── Bank transfer: ACH, wire transfers
-│   └── P2P: LocalBitcoins, Paxful
-└── Earn STX:
-    ├── Stacking: Lock STX, earn BTC
-    ├── Mining: Commit BTC, earn STX
-    ├── DeFi: Yield farming, liquidity providing
-    └── Work: Get paid dalam STX
-```
-
-## Step 5: Security Best Practices
+## Step 5: Security Best Practices (Workshop Focus)
 
 ### Wallet Security
 
@@ -346,7 +326,7 @@ If You Lose Access:
    SP1P72Z3704VMT3DMHPP2CB8TGQWGDBHD3RPR9GZS
    
    Format Rules:
-   ├── Starts dengan SP (mainnet) atau ST (testnet)
+   ├── Starts dengan ST (testnet) - Workshop Focus
    ├── Length: 40 characters after prefix
    ├── Case-sensitive: Capital letters only
    ├── Base58 encoding: No 0, O, I, l characters

@@ -1,8 +1,0 @@
-{
-  "label": "Setup Development",
-  "position": 3,
-  "link": {
-    "type": "generated-index",
-    "description": "Menyiapkan environment pengembangan Stacks dengan Clarinet dan tools lainnya."
-  }
-}

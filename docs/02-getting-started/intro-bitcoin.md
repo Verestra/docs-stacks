@@ -1,3 +1,10 @@
+---
+sidebar_position: 3
+title: 3. Pengenalan Bitcoin
+description: Memahami arsitektur Bitcoin, model transaksi UTXO, fungsi sebagai digital gold dan store of value, serta keterbatasan untuk smart contracts
+keywords: [bitcoin, cryptocurrency, digital gold, UTXO model, store of value, peer-to-peer, satoshi nakamoto]
+---
+
 # Pengenalan Bitcoin
 
 Bitcoin adalah sistem uang terdesentralisasi - sebuah cryptocurrency - yang menggunakan kriptografi fundamental untuk mengamankan aset (koin BTC) dalam ledger terdesentralisasi tanpa memerlukan perantara. Tidak seperti mata uang fiat tradisional yang dikontrol oleh bank sentral dan pemerintah, Bitcoin diatur oleh kode, matematika, dan kriptografi, membuatnya tahan terhadap sensor, korupsi, dan campur tangan dari entitas tunggal.

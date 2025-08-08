@@ -1,3 +1,10 @@
+---
+sidebar_position: 8
+title: 8. Setup Clarinet
+description: Instalasi dan konfigurasi Clarinet development environment untuk membangun, test, dan deploy smart contracts Stacks di berbagai platform
+keywords: [clarinet, development environment, smart contract development, testing, deployment, cross-platform]
+---
+
 # Setup Environment Development dengan Clarinet
 
 Clarinet adalah local development environment yang powerful dan developer-friendly untuk building dan testing Clarity smart contracts. Tutorial ini akan memandu Anda through complete setup process dan first project creation.
@@ -14,27 +21,6 @@ Supported Operating Systems:
 └── Memory: Minimum 4GB RAM, 8GB+ recommended
 ```
 
-### Install Rust (Required)
-
-Clarinet dibangun dengan Rust, jadi kita perlu install Rust terlebih dahulu:
-
-```bash
-# Install Rust menggunakan rustup
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
-# Restart terminal atau reload PATH
-source ~/.cargo/env
-
-# Verify installation
-rustc --version
-cargo --version
-```
-
-Expected output:
-```
-rustc 1.75.0 (82e1608df 2023-12-21)
-cargo 1.75.0 (1d8b05cdd 2023-11-20)
-```
 
 ### Install Node.js (Optional tapi Recommended)
 
@@ -55,54 +41,91 @@ npm --version
 
 ## Step 2: Install Clarinet
 
-### Method 1: Install via Cargo (Recommended)
+### Method 1: Download Binary (Recommended)
 
-```bash
-# Install Clarinet dari cargo
-cargo install clarinet-cli
+#### **Windows:**
+```powershell
+# Download latest Windows release
+Invoke-WebRequest -Uri "https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-windows-x64.zip" -OutFile "clarinet.zip"
+Expand-Archive -Path "clarinet.zip" -DestinationPath "C:\Tools\clarinet"
+# Add C:\Tools\clarinet to your PATH environment variable
+# Or copy clarinet.exe to a directory already in PATH
 
 # Verify installation
 clarinet --version
 ```
 
-Expected output:
-```
-clarinet-cli 2.4.0
-```
-
-### Method 2: Download Binary
-
-Jika ada masalah dengan cargo install:
-
+#### **macOS:**
 ```bash
 # macOS (Intel)
-wget https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-macos-x64.tar.gz
-tar -xzf clarinet-macos-x64.tar.gz
+curl -L https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-macos-x64.tar.gz -o clarinet.tar.gz
+tar -xzf clarinet.tar.gz
 sudo mv clarinet /usr/local/bin/
 
-# macOS (Apple Silicon)
-wget https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-macos-arm64.tar.gz
-tar -xzf clarinet-macos-arm64.tar.gz
+# macOS (Apple Silicon/M1/M2)
+curl -L https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-macos-arm64.tar.gz -o clarinet.tar.gz
+tar -xzf clarinet.tar.gz
 sudo mv clarinet /usr/local/bin/
 
-# Linux
-wget https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-linux-x64.tar.gz
-tar -xzf clarinet-linux-x64.tar.gz
-sudo mv clarinet /usr/local/bin/
-
-# Verify
+# Verify installation
 clarinet --version
 ```
 
-### Method 3: Using Package Managers
-
+#### **Linux:**
 ```bash
-# macOS dengan Homebrew
+# Ubuntu/Debian/CentOS
+curl -L https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-linux-x64.tar.gz -o clarinet.tar.gz
+tar -xzf clarinet.tar.gz
+sudo mv clarinet /usr/local/bin/
+
+# Alternative: Install to user directory (no sudo required)
+mkdir -p ~/.local/bin
+mv clarinet ~/.local/bin/
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+# Verify installation
+clarinet --version
+```
+
+### Method 2: Using Package Managers
+
+#### **Windows:**
+```powershell
+# Using Chocolatey (if installed)
+choco install clarinet
+
+# Using Winget (Windows 10+)
+winget install clarinet
+
+# Using Scoop (if installed)
+scoop install clarinet
+```
+
+#### **macOS:**
+```bash
+# Using Homebrew (recommended)
 brew install clarinet
 
-# Ubuntu/Debian
-curl -L https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-linux-x64.tar.gz | tar xz
-sudo mv clarinet /usr/local/bin/
+# Using MacPorts
+sudo port install clarinet
+```
+
+#### **Linux:**
+```bash
+# Ubuntu/Debian via apt (if available)
+sudo apt update
+sudo apt install clarinet
+
+# Arch Linux via AUR
+yay -S clarinet
+
+# Fedora/RHEL via dnf (if available)
+sudo dnf install clarinet
+
+# Universal: Using Homebrew on Linux
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install clarinet
 ```
 
 ## Step 3: Install VS Code Extension
@@ -132,17 +155,39 @@ Clarity VS Code Extension provides:
 Mari test semua installations:
 
 ```bash
+# All Platforms - Check installations
+
 # Check Clarinet
 clarinet --version
 
-# Check Rust
-rustc --version
+# Check VS Code (optional)
+code --version
 
 # Check Node.js (jika installed)
 node --version
 
 # Test Clarinet commands
 clarinet help
+```
+
+### **Platform-Specific Verification:**
+
+#### **Windows (PowerShell):**
+```powershell
+# Check PATH contains Clarinet
+where.exe clarinet
+
+# Test VS Code integration
+code --list-extensions | Select-String "clarity"
+```
+
+#### **macOS/Linux (Terminal):**
+```bash
+# Check PATH contains Clarinet
+which clarinet
+
+# Test VS Code integration
+code --list-extensions | grep clarity
 ```
 
 Expected help output:
@@ -164,7 +209,7 @@ SUBCOMMANDS:
     test            Execute test suite
     console         Load contracts in a REPL for interactive testing
     integrate       Integrate with external services
-    deployment      Manage contracts deployments on Mainnet and Testnet
+    deployment      Manage contracts deployments on Testnet
     help            Print this message or the help of the given subcommand(s)
 ```
 
@@ -194,7 +239,6 @@ hello-stacks/
 ├── settings/             # Network settings
 │   ├── Devnet.toml       # Local development settings
 │   ├── Testnet.toml      # Testnet settings
-│   └── Mainnet.toml      # Mainnet settings
 └── deployments/          # Deployment configurations
 ```
 
@@ -664,22 +708,55 @@ clarinet deployment apply           # Deploy contracts
 
 ## Troubleshooting Common Issues
 
-### 1. Installation Issues
+### **1. Installation Issues**
 
-```bash
-# Rust not found
-echo 'export PATH="$HOME/.cargo/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+#### **Windows:**
+```powershell
+# Clarinet not found in PATH
+$env:PATH += ";C:\Tools\clarinet"
+# Or permanently add via System Properties > Environment Variables
 
-# Permission denied on Linux/macOS
-sudo chmod +x /usr/local/bin/clarinet
+# PowerShell execution policy issues
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
-# Clarinet not found after install
-which clarinet
-echo $PATH
+# Permission issues
+# Run PowerShell as Administrator if needed
 ```
 
-### 2. Contract Syntax Errors
+#### **macOS:**
+```bash
+# PATH issues
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+# Permission denied
+sudo chmod +x /usr/local/bin/clarinet
+
+# Apple Silicon compatibility
+# Ensure you downloaded arm64 version for M1/M2 Macs
+
+# Gatekeeper issues (untuk downloaded binaries)
+sudo spctl --add /usr/local/bin/clarinet
+```
+
+#### **Linux:**
+```bash
+# PATH issues
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+# Permission denied
+sudo chmod +x /usr/local/bin/clarinet
+
+# Library dependencies (Ubuntu/Debian)
+sudo apt update
+sudo apt install libc6-dev
+
+# SELinux issues (CentOS/RHEL)
+sudo setsebool -P use_nfs_home_dirs 1
+```
+
+### **2. Contract Syntax Errors (All Platforms)**
 
 ```bash
 # Common syntax fixes:
@@ -692,7 +769,7 @@ echo $PATH
 clarinet check --verbose
 ```
 
-### 3. Test Failures
+### **3. Test Failures (All Platforms)**
 
 ```bash
 # Check test imports
@@ -704,16 +781,33 @@ clarinet console
 # Test functions interactively
 ```
 
-### 4. VS Code Extension Issues
+### **4. VS Code Extension Issues**
 
+#### **All Platforms:**
 ```bash
 # Restart VS Code Language Server
 # Cmd/Ctrl + Shift + P → "Developer: Reload Window"
 
 # Verify extension installation
+code --list-extensions | grep clarity
+
 # Check .vscode/settings.json configuration
 # Ensure Clarity extension is enabled
 ```
+
+#### **Platform-Specific Solutions:**
+
+**Windows:**
+- Check Windows Defender isn't blocking VS Code extensions
+- Run VS Code as Administrator if extension won't install
+
+**macOS:**
+- Check Gatekeeper settings for VS Code
+- Ensure VS Code has proper permissions
+
+**Linux:**
+- Check snap/flatpak VS Code versions have extension access
+- Consider using native .deb/.rpm package for better integration
 
 ## Next Steps
 
@@ -721,7 +815,7 @@ Dengan development environment yang sudah setup, Anda siap untuk:
 
 1. **Build complex contracts** - Smart contracts yang lebih sophisticated
 2. **Learn testing patterns** - Advanced testing strategies
-3. **Deploy contracts** - Deploy ke testnet dan mainnet
+3. **Deploy contracts** - Deploy ke testnet
 4. **Build frontend** - Integrate contracts dengan web applications
 5. **Explore DeFi** - Build financial applications
 
@@ -729,6 +823,6 @@ Sekarang mari create project Tic Tac Toe yang lebih complex untuk practice skill
 
 ---
 
-**Selanjutnya**: Mari build project Tic Tac Toe step-by-step dari awal sampai deployment.
+**Selanjutnya**: Sebelum mulai coding, mari pelajari dasar-dasar bahasa pemrograman Clarity.
 
-👉 **[Lanjut ke Project Tic Tac Toe →](./tic-tac-toe-project.md)**
+👉 **[Lanjut ke Dasar-dasar Clarity →](./clarity-basics.md)**

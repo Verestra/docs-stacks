@@ -1,3 +1,10 @@
+---
+sidebar_position: 2
+title: 2. Dasar-dasar Blockchain
+description: Memahami konsep fundamental teknologi blockchain, sistem terdesentralisasi, mekanisme konsensus, dan mengapa Layer 2 diperlukan
+keywords: [blockchain, decentralized system, consensus mechanism, proof of work, layer 2, smart contract, cryptography]
+---
+
 # Pengenalan Teknologi Blockchain
 
 Blockchain adalah teknologi revolusioner yang memungkinkan pencatatan transaksi secara terdesentralisasi, transparan, dan tidak dapat diubah. Untuk memahami Stacks sebagai Layer 2 Bitcoin, penting untuk memahami fondasi teknologi blockchain terlebih dahulu.

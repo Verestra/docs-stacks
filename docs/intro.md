@@ -1,68 +1,95 @@
-# Tutorial Stacks Layer 2 Bitcoin
+---
+sidebar_position: 1
+title: Dokumentasi Workshop Stacks
+description: Workshop intensif 2 hari untuk belajar membangun smart contracts di Bitcoin Layer 2 dengan Stacks blockchain
+keywords: [stacks, bitcoin, layer2, smart contract, clarity, workshop, blockchain, web3, cryptocurrency, development]
+---
 
-Selamat datang di tutorial komprehensif untuk membangun aplikasi di Stacks, Layer 2 Bitcoin yang memungkinkan smart contracts dan DApps di ekosistem Bitcoin.
+# Dokumentasi Workshop Stacks
 
-## Apa yang Akan Anda Pelajari
+Selamat datang di workshop Stacks - belajar membangun smart contracts di Bitcoin Layer 2 dalam format workshop intensif 2 hari.
 
-Tutorial ini akan memandu Anda melalui perjalanan lengkap pengembangan di ekosistem Stacks, mulai dari konsep dasar hingga membangun aplikasi decentralized yang kompleks.
+## 🎯 Ringkasan Workshop
 
-### 🏗️ Fondasi Teknologi
-- **Teknologi Blockchain**: Memahami dasar-dasar teknologi blockchain dan cara kerjanya
-- **Bitcoin**: Mendalami arsitektur Bitcoin dan mekanisme Proof of Work
-- **Layer 2 Solutions**: Mengapa Layer 2 diperlukan dan bagaimana mengatasi keterbatasan Layer 1
+Workshop ini dirancang untuk memberikan pengalaman hands-on dalam membangun smart contracts di Stacks blockchain. Dalam 2 hari, Anda akan:
 
-### 🔧 Stacks Ecosystem
-- **Arsitektur Stacks**: Bagaimana Stacks bekerja sebagai Layer 2 Bitcoin
-- **Proof of Transfer (PoX)**: Mekanisme konsensus unik yang memanfaatkan keamanan Bitcoin
-- **Nakamoto Upgrade**: Peningkatan terbaru yang membuat Stacks lebih cepat dan aman
+- **Hari 1**: Mempelajari dasar-dasar Clarity dan membangun game Tic Tac Toe
+- **Hari 2**: Membangun project individu sesuai pilihan (Token, NFT, atau Voting System)
 
-### 💻 Pengembangan Smart Contract
-- **Bahasa Clarity**: Bahasa pemrograman functional yang aman untuk smart contracts
-- **Clarinet**: Environment pengembangan lokal untuk testing dan deployment
-- **SIP Standards**: Token standards (SIP-010 untuk Fungible Tokens, SIP-009 untuk NFTs)
+## 🗓️ Jadwal Workshop
 
-### 🚀 Aplikasi Praktis
-- **Setup Wallet**: Menggunakan Leather Wallet untuk berinteraksi dengan Stacks
-- **Fungible Tokens**: Membuat dan mengelola token ERC-20 style di Stacks
-- **Non-Fungible Tokens (NFTs)**: Membangun koleksi NFT yang compliant dengan SIP-009
-- **NFT Marketplace**: Proyek akhir - marketplace NFT full-stack
+### Hari 1: Dasar-dasar & Tic Tac Toe
+- **Sesi 1**: Pengenalan & Setup (basics Stacks, setup environment)
+- **Sesi 2**: Project Tic Tac Toe (belajar sambil membangun)
+- **Tujuan**: Memahami dasar-dasar Clarity dan deploy smart contract pertama Anda
 
-## Mengapa Stacks?
+### Hari 2: Project Individu
+- **Sesi 1**: Pilih project Anda (Token, NFT, atau Voting System)
+- **Sesi 2**: Bangun, test, dan deploy project Anda
+- **Tujuan**: Membuat project lengkap menggunakan standar SIP
 
-Stacks adalah satu-satunya Layer 2 yang memungkinkan Anda:
+## 📚 Struktur Dokumentasi
 
-✅ **Memanfaatkan Keamanan Bitcoin**: Transaksi Anda diamankan oleh hash power Bitcoin  
-✅ **Akses Likuiditas Bitcoin**: Berinteraksi langsung dengan $1+ triliun aset Bitcoin  
-✅ **Smart Contracts yang Aman**: Clarity language yang predictable dan secure  
-✅ **Ekosistem Matang**: Wallet, explorer, dan tools yang lengkap  
+Dokumentasi ini disusun untuk mengikuti alur workshop:
 
-## Prasyarat
+### 🎯 [Pengenalan Workshop](./01-workshop-intro/)
+- Ringkasan workshop dan jadwal
+- Tujuan pembelajaran dan hasil yang diharapkan
 
-Untuk mengikuti tutorial ini, Anda perlu:
+### 🚀 [Memulai](./02-getting-started/) 
+- Dasar-dasar Blockchain dan Stacks
+- Setup environment development
+- Setup wallet
+- Dasar-dasar bahasa Clarity
 
-- Pemahaman dasar tentang blockchain dan cryptocurrency
-- Familiar dengan konsep programming (tidak harus expert)
+### 🎮 [Hari 1: Project Tic Tac Toe](./03-day1-tic-tac-toe/)
+- Implementasi Tic Tac Toe step-by-step
+- Belajar Clarity melalui hands-on project
+- Testing dan deployment
+
+### 💼 [Hari 2: Project Solo](./04-day2-solo-projects/)
+- **Opsi 1**: Simple Token (SIP-010)
+- **Opsi 2**: Koleksi NFT (SIP-009)  
+- **Opsi 3**: Sistem Voting
+- Panduan project lengkap untuk setiap opsi
+
+### 🔧 [Topik Lanjutan](./05-advanced-topics/)
+- Strategi deployment production
+- Pattern smart contract lanjutan
+- Pengembangan NFT marketplace
+
+### 📚 [Referensi](./06-reference/)
+- Referensi command Clarinet
+- Panduan troubleshooting
+- Kompatibilitas versi
+
+## 🎓 Pendekatan Pembelajaran
+
+Workshop ini menggunakan pendekatan **learning by doing**:
+
+1. **Teori Minimal**: Fokus pada praktek, teori seperlunya
+2. **Project Hands-on**: Setiap konsep diimplementasikan langsung
+3. **Kompleksitas Bertahap**: Mulai dari basic, bertahap ke advanced
+4. **Aplikasi Nyata**: Semua project adalah aplikasi yang bisa digunakan
+
+## 🛠️ Prasyarat
+
+- Pengetahuan programming dasar (bahasa apapun)
 - Text editor (VS Code direkomendasikan)
-- Node.js dan npm terinstall
-- Git untuk version control
+- Familiar dengan terminal/command line
+- Laptop dengan koneksi internet
 
-## Struktur Tutorial
+## 🚀 Mulai Cepat
 
-Tutorial ini dibagi menjadi beberapa bagian:
+Siap untuk memulai workshop? Ikuti langkah berikut:
 
-1. **[Fondasi Blockchain](./blockchain-fundamentals/)** - Memahami teknologi dasar
-2. **[Pengenalan Stacks](./stacks-introduction/)** - Arsitektur dan konsep Stacks
-3. **[Setup Development](./development-setup/)** - Menyiapkan environment pengembangan
-4. **[Clarity Basics](./clarity-language/)** - Belajar bahasa Clarity
-5. **[Token Development](./token-development/)** - Membuat Fungible dan Non-Fungible Tokens
-6. **[Final Project](./nft-marketplace/)** - Membangun NFT Marketplace
-
-## Mulai Sekarang
-
-Siap untuk memulai perjalanan pengembangan di Bitcoin Layer 2? Mari mulai dengan memahami fondasi teknologi blockchain dan Bitcoin.
-
-👉 **[Lanjut ke Fondasi Blockchain →](./blockchain-fundamentals/)**
+1. **[Pengenalan Workshop](./01-workshop-intro/)** - Pahami apa yang akan Anda bangun
+2. **[Memulai](./02-getting-started/)** - Setup environment Anda  
+3. **[Project Hari 1](./03-day1-tic-tac-toe/)** - Bangun smart contract pertama
+4. **[Project Hari 2](./04-day2-solo-projects/)** - Pilih spesialisasi Anda
 
 ---
 
-*Tutorial ini dirancang untuk memberikan pemahaman mendalam tentang pengembangan di ekosistem Stacks. Setiap contoh code dan implementasi telah diuji dan siap untuk digunakan dalam environment development.*
+**🎯 Tujuan Workshop**: Di akhir workshop ini, Anda akan memiliki 2 smart contract lengkap dan memahami cara mengembangkan di Bitcoin Layer 2 yang paling aman.
+
+👉 **[Mulai dengan Pengenalan Workshop →](./01-workshop-intro/)**

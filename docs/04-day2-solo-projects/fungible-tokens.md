@@ -1,3 +1,10 @@
+---
+sidebar_position: 3
+title: 3. Deep Dive Fungible Tokens
+description: Pemahaman mendalam tentang SIP-010 fungible token standard - implementasi, best practices, dan use cases dalam ecosystem Stacks
+keywords: [sip-010, fungible token, token standard, token development, erc-20 equivalent, stacks tokens]
+---
+
 # Fungible Token (SIP-010 Token Standard)
 
 Membuat fungible tokens di Stacks menggunakan SIP-010 standard, yang mirip dengan ERC-20 di Ethereum. Standard ini memastikan kompatibilitas dengan wallets, exchanges, dan aplikasi lain dalam ekosistem Stacks.
@@ -844,7 +851,7 @@ Clarinet.test({
 
 ```typescript
 // scripts/deploy-token.ts
-import { StacksMainnet, StacksTestnet } from '@stacks/network';
+import { StacksTestnet } from '@stacks/network';
 import { 
     makeContractDeploy,
     broadcastTransaction,
@@ -854,7 +861,7 @@ import {
 import { readFileSync } from 'fs';
 
 async function deployToken() {
-    const network = new StacksTestnet(); // Change untuk mainnet
+    const network = new StacksTestnet(); // Workshop uses testnet
     
     // Read contract code
     const contractCode = readFileSync('./contracts/clarity-coin.clar', 'utf8');

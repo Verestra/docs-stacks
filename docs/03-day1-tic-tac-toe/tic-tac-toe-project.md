@@ -1,3 +1,10 @@
+---
+sidebar_position: 2
+title: 2. Membangun Game Tic Tac Toe
+description: Tutorial lengkap membangun smart contract game Tic Tac Toe - dari setup project hingga deployment dan testing
+keywords: [tic tac toe tutorial, smart contract development, clarity project, game logic, testing, deployment]
+---
+
 # Project Step-by-Step: Tic Tac Toe Game
 
 Mari build game Tic Tac Toe lengkap di Stacks dengan betting mechanism! Project ini akan mengajarkan concepts penting seperti game logic, state management, dan financial transactions dalam smart contracts.
@@ -1491,11 +1498,11 @@ Setelah menyelesaikan Tic Tac Toe project:
    - Mobile responsive
    - Game animations
 
-3. **Deploy Production**:
-   - Mainnet deployment
-   - Domain setup
-   - CDN configuration
-   - Monitoring setup
+3. **Advanced Development** (Post-Workshop):
+   - Enhanced features
+   - Better error handling
+   - Performance optimization
+   - Community sharing
 
 4. **Scale Up**:
    - Multiple game types

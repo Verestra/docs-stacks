@@ -1,3 +1,10 @@
+---
+sidebar_position: 5
+title: 5. Solusi Layer 2
+description: Memahami mengapa Layer 2 diperlukan untuk Bitcoin - scalability trilemma, berbagai jenis Layer 2, dan perbandingan solusi seperti Lightning Network vs Stacks
+keywords: [layer 2, scalability, bitcoin scaling, lightning network, sidechains, rollups, stacks layer 2]
+---
+
 # Memahami Keterbatasan Layer 1 dan Solusi Layer 2
 
 Blockchain Layer 1 seperti Bitcoin dan Ethereum adalah fondasi teknologi blockchain, fokus utama pada security dan decentralization. Namun, prioritas ini datang dengan trade-offs signifikan yang membuat Layer 2 solutions sangat penting.
@@ -570,4 +577,4 @@ Layer 2 solutions akan menjadi dominant way untuk interact dengan blockchain, de
 
 **Selanjutnya**: Setelah memahami limitations Layer 1 dan necessity Layer 2, mari explore Stacks sebagai solution paling inovatif untuk Bitcoin ecosystem.
 
-👉 **[Lanjut ke Pengenalan Stacks →](../stacks-introduction/)**
+👉 **[Lanjut ke Apa itu Stacks →](./what-is-stacks.md)**

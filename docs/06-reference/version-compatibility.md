@@ -1,3 +1,10 @@
+---
+sidebar_position: 3
+title: 3. Kompatibilitas Versi
+description: Panduan kompatibilitas versi tools Stacks development - Clarinet, Stacks node, Clarity version, dan dependencies
+keywords: [version compatibility, clarinet version, stacks version, clarity version, dependency management]
+---
+
 # Clarinet Version Compatibility Guide
 
 Different versions of Clarinet have different available commands. This guide helps you work with any version.
@@ -161,7 +168,8 @@ clarinet --help
 
 # 2. Use manual methods
 # 3. Consider upgrading Clarinet
-cargo install clarinet-cli --force
+# Download latest binary from GitHub releases
+wget https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-linux-x64.tar.gz
 ```
 
 ## Universal Testing Template
@@ -209,8 +217,10 @@ Create `manual-testing.md` untuk consistent testing across versions:
 
 ### Upgrade Clarinet
 ```bash
-# Update to latest version
-cargo install clarinet-cli --force
+# Update to latest version via binary
+wget https://github.com/hirosystems/clarinet/releases/latest/download/clarinet-linux-x64.tar.gz
+tar -xzf clarinet-linux-x64.tar.gz
+sudo mv clarinet /usr/local/bin/
 
 # Verify new version
 clarinet --version

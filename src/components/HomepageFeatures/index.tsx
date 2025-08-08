@@ -11,32 +11,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Stacks Bitcoin Layer 2',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Learn to build smart contracts on Bitcoin Layer 2 using Stacks.
+        Unlock Bitcoin's potential with Clarity programming language.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Hands-on Workshops',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Interactive 2-day workshops with real project development.
+        From setup to deployment, learn by building actual applications.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Blockchain Development',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Master Web3 development with comprehensive tutorials and documentation.
+        Build the future of decentralized applications on Bitcoin.
       </>
     ),
   },

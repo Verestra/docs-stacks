@@ -1,3 +1,10 @@
+---
+sidebar_position: 4
+title: 4. Proof of Work
+description: Memahami mekanisme konsensus Proof of Work yang mengamankan Bitcoin - mining, difficulty adjustment, energy consumption, dan security benefits
+keywords: [proof of work, mining, consensus mechanism, bitcoin security, hash power, difficulty adjustment, energy consumption]
+---
+
 # Mekanisme Konsensus Proof of Work
 
 Di inti model keamanan Bitcoin adalah mekanisme konsensus Proof of Work (PoW), yang telah berhasil mengamankan network Bitcoin selama lebih dari 15 tahun.
