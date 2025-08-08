@@ -1,0 +1,8 @@
+{
+  "label": "Token Development",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Membuat Fungible Tokens (SIP-010) dan Non-Fungible Tokens (SIP-009) di Stacks."
+  }
+}
