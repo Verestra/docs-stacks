@@ -1,6 +1,6 @@
 ---
-sidebar_position: 2
-title: 2. Smart Contract Development - Tic Tac Toe
+sidebar_position: 1
+title: 1. Smart Contract Development - Tic Tac Toe
 description: Tutorial lengkap membangun smart contract game Tic Tac Toe dengan betting mechanism menggunakan Clarity - dari setup hingga deployment
 keywords: [tic tac toe smart contract, clarity development, game logic, betting system, stacks blockchain, contract testing]
 ---

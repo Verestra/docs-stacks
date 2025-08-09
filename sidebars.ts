@@ -53,6 +53,7 @@ const sidebars: SidebarsConfig = {
         'day1-tic-tac-toe/introduction',
         'day1-tic-tac-toe/contracts-tic-tac-toe',
         'day1-tic-tac-toe/ui-tic-tac-toe',
+        'day1-tic-tac-toe/easy-challenges',
       ],
     },
     {

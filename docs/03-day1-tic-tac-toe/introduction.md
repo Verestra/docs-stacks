@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-title: 1. Pengenalan Project Hari 1
+sidebar_position: 0
+title: Pengenalan Project Hari 1
 description: Pengenalan project Tic Tac Toe untuk mempelajari fundamental Clarity programming - state management, game logic, dan testing
 keywords: [tic tac toe, game development, clarity programming, smart contract game, state management, hands-on learning]
 ---
