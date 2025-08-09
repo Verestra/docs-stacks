@@ -155,7 +155,22 @@ export default {
 } satisfies Config;
 ```
 
-### 3.2 Update Global CSS
+### 3.2 Create PostCSS Configuration
+
+Buat file `postcss.config.mjs`:
+
+```javascript
+/** @type {import('postcss-load-config').Config} */
+const config = {
+  plugins: {
+    tailwindcss: {},
+  },
+};
+
+export default config;
+```
+
+### 3.3 Update Global CSS
 
 Update file `app/globals.css`:
 
